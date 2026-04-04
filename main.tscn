@@ -1,3 +1,40 @@
 [gd_scene format=3 uid="uid://cqow47bch5ocs"]
 
+[ext_resource type="Script" uid="uid://cy6ymf0uw1o1j" path="res://main.gd" id="1_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://c2dutmu6mqtgy" path="res://Background/Background2.png" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://cliybhn78x85j" path="res://Buttons/01442c0d5144e21405764050bcb6a200-fotor-20260402144011 (3).png" id="3_lquwl"]
+[ext_resource type="Texture2D" uid="uid://wyvf1de8tmpa" path="res://Buttons/01442c0d5144e21405764050bcb6a200-fotor-20260402144011 (3)-fotor-20260404132253.png" id="4_5vw27"]
+[ext_resource type="Texture2D" uid="uid://cc2q13qvapuej" path="res://Buttons/01442c0d5144e21405764050bcb6a200-fotor-20260402144030 (1).png" id="4_7mycd"]
+[ext_resource type="Script" uid="uid://cyfk0drwenw5i" path="res://btn_quit.gd" id="5_7mycd"]
+[ext_resource type="Texture2D" uid="uid://b77ldaygqxg4k" path="res://Buttons/01442c0d5144e21405764050bcb6a200-fotor-20260402144030 (1)-fotor-20260404132542.png" id="5_272bh"]
+
 [node name="main" type="Node2D" unique_id=856390296]
+script = ExtResource("1_1bvp3")
+
+[node name="Background2" type="Sprite2D" parent="." unique_id=1972984275]
+position = Vector2(684, 383.00003)
+scale = Vector2(0.48649612, 0.49674478)
+texture = ExtResource("1_ig7tw")
+metadata/_edit_lock_ = true
+
+[node name="btn_play" type="TextureButton" parent="." unique_id=749143829]
+offset_left = 552.0
+offset_top = 427.0
+offset_right = 857.0
+offset_bottom = 518.0
+texture_normal = ExtResource("3_lquwl")
+texture_pressed = ExtResource("4_5vw27")
+metadata/_edit_lock_ = true
+
+[node name="btn_quit" type="TextureButton" parent="." unique_id=796177332]
+offset_left = 554.0
+offset_top = 560.0
+offset_right = 859.0
+offset_bottom = 651.0
+texture_normal = ExtResource("4_7mycd")
+texture_pressed = ExtResource("5_272bh")
+script = ExtResource("5_7mycd")
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="btn_play" to="." method="_on_btn_play_pressed"]
+[connection signal="pressed" from="btn_quit" to="." method="_on_quit_btn_pressed"]

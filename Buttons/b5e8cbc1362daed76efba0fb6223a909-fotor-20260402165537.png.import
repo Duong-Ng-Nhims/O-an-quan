@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://g8xmblimf2u3"
-path="res://.godot/imported/Ban_co.png-b02ed4f7e4d48743f8eefaa8e20cea49.ctex"
+uid="uid://cck35g2e5oo68"
+path="res://.godot/imported/b5e8cbc1362daed76efba0fb6223a909-fotor-20260402165537.png-bdd02767aac00f2fe7564ab77ef8bfde.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Background/Ban_co.png"
-dest_files=["res://.godot/imported/Ban_co.png-b02ed4f7e4d48743f8eefaa8e20cea49.ctex"]
+source_file="res://Buttons/b5e8cbc1362daed76efba0fb6223a909-fotor-20260402165537.png"
+dest_files=["res://.godot/imported/b5e8cbc1362daed76efba0fb6223a909-fotor-20260402165537.png-bdd02767aac00f2fe7564ab77ef8bfde.ctex"]
 
 [params]
 
