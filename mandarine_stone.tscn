@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cq37xnbkvtgha"]
+
+[ext_resource type="Texture2D" uid="uid://be1snfxuw0fay" path="res://Assets/Screenshot_2026-04-12_011147-removebg-preview (1).png" id="1_kmkqx"]
+
+[node name="mandarineStone" type="Node2D" unique_id=1741313822]
+
+[node name="madarineStone" type="Sprite2D" parent="." unique_id=1916103203]
+position = Vector2(1, -1)
+texture = ExtResource("1_kmkqx")

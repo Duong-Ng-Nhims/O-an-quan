@@ -1,0 +1,164 @@
+[gd_scene format=3 uid="uid://ikx8i7sdlqc3"]
+
+[ext_resource type="Script" uid="uid://bptibmbmbjy6u" path="res://playground.gd" id="1_is3ju"]
+[ext_resource type="Texture2D" uid="uid://bf3tg168pyy7b" path="res://Background/Screenshot 2026-04-02 180046.png" id="1_rupst"]
+[ext_resource type="Texture2D" uid="uid://6ieca8spbjag" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135042 (1).png" id="3_o00ia"]
+[ext_resource type="Texture2D" uid="uid://dciaycamnjvk7" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135227 (1).png" id="4_4bqqs"]
+[ext_resource type="Texture2D" uid="uid://qint8h40em6w" path="res://Assets/596641d712810e1bff080317843cae1d-removebg-preview (1).png" id="5_o00ia"]
+[ext_resource type="PackedScene" uid="uid://72fctep5cu5f" path="res://hole.tscn" id="5_pi42a"]
+[ext_resource type="Texture2D" uid="uid://ce7ms2lmpl482" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401134438 (1).png" id="6_4bqqs"]
+[ext_resource type="PackedScene" uid="uid://bqs8i4aim3p7w" path="res://player_1_frame.tscn" id="7_v7dth"]
+[ext_resource type="PackedScene" uid="uid://bumwectff6dwd" path="res://player_2_frame.tscn" id="8_pi42a"]
+[ext_resource type="Texture2D" uid="uid://djcfj1hy4y3a8" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135328 (1).png" id="10_h1jm5"]
+
+[node name="playground" type="Node2D" unique_id=867354591]
+script = ExtResource("1_is3ju")
+
+[node name="Screenshot20260402180046" type="Sprite2D" parent="." unique_id=2047541143]
+position = Vector2(686.5, 381.00003)
+scale = Vector2(0.7123502, 0.72796947)
+texture = ExtResource("1_rupst")
+metadata/_edit_lock_ = true
+
+[node name="btn_home" type="TextureButton" parent="." unique_id=1106848837]
+offset_left = 1302.0
+offset_top = 26.0
+offset_right = 1350.0
+offset_bottom = 81.0
+texture_normal = ExtResource("3_o00ia")
+metadata/_edit_lock_ = true
+
+[node name="btn_setting" type="TextureButton" parent="." unique_id=244158836]
+offset_left = 1304.0
+offset_top = 106.0
+offset_right = 1352.0
+offset_bottom = 161.0
+texture_normal = ExtResource("4_4bqqs")
+metadata/_edit_lock_ = true
+
+[node name="board_manager" type="Node2D" parent="." unique_id=1665214591]
+
+[node name="holes" type="Node2D" parent="board_manager" unique_id=1850236774]
+position = Vector2(1, -2)
+
+[node name="hole0" parent="board_manager/holes" unique_id=1704635957 instance=ExtResource("5_pi42a")]
+position = Vector2(493, 494)
+metadata/_edit_lock_ = true
+
+[node name="hole1" parent="board_manager/holes" unique_id=1316773537 instance=ExtResource("5_pi42a")]
+position = Vector2(601, 495)
+metadata/_edit_lock_ = true
+
+[node name="hole2" parent="board_manager/holes" unique_id=461360052 instance=ExtResource("5_pi42a")]
+position = Vector2(705, 494)
+metadata/_edit_lock_ = true
+
+[node name="hole3" parent="board_manager/holes" unique_id=2094144777 instance=ExtResource("5_pi42a")]
+position = Vector2(814, 495)
+metadata/_edit_lock_ = true
+
+[node name="hole4" parent="board_manager/holes" unique_id=713565899 instance=ExtResource("5_pi42a")]
+position = Vector2(923, 494)
+metadata/_edit_lock_ = true
+
+[node name="hole5" parent="board_manager/holes" unique_id=1914973740 instance=ExtResource("5_pi42a")]
+position = Vector2(923, 314)
+metadata/_edit_lock_ = true
+
+[node name="hole6" parent="board_manager/holes" unique_id=1796017130 instance=ExtResource("5_pi42a")]
+position = Vector2(818, 316)
+metadata/_edit_lock_ = true
+
+[node name="hole7" parent="board_manager/holes" unique_id=595877758 instance=ExtResource("5_pi42a")]
+position = Vector2(708, 318)
+metadata/_edit_lock_ = true
+
+[node name="hole8" parent="board_manager/holes" unique_id=1573215347 instance=ExtResource("5_pi42a")]
+position = Vector2(599, 316)
+metadata/_edit_lock_ = true
+
+[node name="hole9" parent="board_manager/holes" unique_id=873451337 instance=ExtResource("5_pi42a")]
+position = Vector2(492, 315)
+metadata/_edit_lock_ = true
+
+[node name="mandarineHoles" type="Node2D" parent="board_manager" unique_id=903150976]
+position = Vector2(360, 400)
+
+[node name="hole0" parent="board_manager/mandarineHoles" unique_id=113248076 instance=ExtResource("5_pi42a")]
+position = Vector2(7, 1.0000007)
+scale = Vector2(1.25, 2.5)
+metadata/_edit_lock_ = true
+
+[node name="hole1" parent="board_manager/mandarineHoles" unique_id=617936922 instance=ExtResource("5_pi42a")]
+position = Vector2(668.00006, -3)
+scale = Vector2(1.25, 2.5)
+metadata/_edit_lock_ = true
+
+[node name="stonesContainer" type="Node2D" parent="board_manager" unique_id=281386367]
+z_index = 10
+
+[node name="basketP1" type="Sprite2D" parent="board_manager" unique_id=1849532312]
+position = Vector2(1197, 651)
+texture = ExtResource("5_o00ia")
+metadata/_edit_lock_ = true
+
+[node name="stonePoint1" type="Marker2D" parent="board_manager/basketP1" unique_id=1112745371]
+position = Vector2(0, 3)
+
+[node name="basketP2" type="Sprite2D" parent="board_manager" unique_id=571562744]
+position = Vector2(241, 106)
+texture = ExtResource("5_o00ia")
+metadata/_edit_lock_ = true
+
+[node name="stonePoint2" type="Marker2D" parent="board_manager/basketP2" unique_id=2112593154]
+
+[node name="btn_pause" type="TextureButton" parent="." unique_id=1918597564]
+offset_left = 19.0
+offset_top = 15.0
+offset_right = 74.0
+offset_bottom = 70.0
+texture_normal = ExtResource("6_4bqqs")
+metadata/_edit_lock_ = true
+
+[node name="P1" parent="." unique_id=63161917 instance=ExtResource("7_v7dth")]
+offset_left = 721.0
+offset_top = 605.0
+offset_right = 862.0
+offset_bottom = 745.0
+metadata/_edit_lock_ = true
+
+[node name="P2" parent="." unique_id=812609028 instance=ExtResource("8_pi42a")]
+offset_left = 578.0
+offset_top = 57.0
+offset_right = 718.0
+offset_bottom = 197.0
+metadata/_edit_lock_ = true
+
+[node name="scoreLabel1" type="Label" parent="." unique_id=1346829568]
+offset_left = 894.0
+offset_top = 622.0
+offset_right = 1082.0
+offset_bottom = 734.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+
+[node name="scoreLabel2" type="Label" parent="." unique_id=820063794]
+offset_left = 355.0
+offset_top = 78.0
+offset_right = 554.0
+offset_bottom = 185.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+
+[node name="btn_replay" type="TextureButton" parent="." unique_id=1434101912]
+offset_left = 20.0
+offset_top = 99.0
+offset_right = 68.0
+offset_bottom = 147.0
+texture_normal = ExtResource("10_h1jm5")
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="btn_home" to="." method="_on_btn_home_pressed"]
+[connection signal="het_gio" from="P1" to="." method="_on_p_1_het_gio"]
+[connection signal="het_gio" from="P2" to="." method="_on_p_2_het_gio"]
+[connection signal="pressed" from="btn_replay" to="." method="_on_btn_replay_pressed"]

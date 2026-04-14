@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://72fctep5cu5f"]
+
+[ext_resource type="Script" uid="uid://b7a61jc3lrerj" path="res://hole.gd" id="1_cki6r"]
+[ext_resource type="Texture2D" uid="uid://ccdqwc3nwd2xa" path="res://Buttons/4ee5bed273928fe29116a1d2e630f770-removebg-preview (1)-fotor-20260414182212.png" id="2_cki6r"]
+[ext_resource type="Texture2D" uid="uid://cs3ljyvyulieb" path="res://Buttons/4ee5bed273928fe29116a1d2e630f770-removebg-preview (1).png" id="3_aqv4r"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4igv2"]
+radius = 45.0
+height = 120.0
+
+[node name="hole" type="Area2D" unique_id=1704635957]
+script = ExtResource("1_cki6r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=161347701]
+shape = SubResource("CapsuleShape2D_4igv2")
+
+[node name="Arrow" type="Node2D" parent="." unique_id=984850697]
+z_index = 20
+
+[node name="btn_left" type="TextureButton" parent="Arrow" unique_id=1980866175]
+offset_left = -119.0
+offset_top = -24.0
+offset_right = -80.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("2_cki6r")
+
+[node name="btn_right" type="TextureButton" parent="Arrow" unique_id=1650080228]
+offset_left = 47.0
+offset_top = -25.0
+offset_right = 94.5
+offset_bottom = 0.5
+scale = Vector2(2, 2)
+texture_normal = ExtResource("3_aqv4r")
+
+[node name="stoneCountLabel" type="Label" parent="." unique_id=504598455]
+z_index = 30
+offset_left = -6.0
+offset_top = 27.0
+offset_right = 20.0
+offset_bottom = 86.0
+theme_override_font_sizes/font_size = 22
+text = "0
+"
+
+[connection signal="pressed" from="Arrow/btn_left" to="." method="_on_btn_left_pressed"]
+[connection signal="pressed" from="Arrow/btn_right" to="." method="_on_btn_right_pressed"]

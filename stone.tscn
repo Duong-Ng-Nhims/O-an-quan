@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dpxfhyjwxygpa"]
+
+[ext_resource type="Texture2D" uid="uid://dvxgoo0vwxr0o" path="res://Assets/Screenshot_2026-04-12_010916-removebg-preview (1).png" id="1_6s6ed"]
+
+[node name="stone" type="Node2D" unique_id=1062055841]
+
+[node name="stone" type="Sprite2D" parent="." unique_id=91382139]
+texture = ExtResource("1_6s6ed")

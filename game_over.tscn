@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://bgewkkc1desvv"]
+
+[ext_resource type="Script" uid="uid://cpbfnw0x3ixt6" path="res://game_over.gd" id="1_y26ei"]
+[ext_resource type="FontFile" uid="uid://d2n48toq4lxxb" path="res://Font/Super Kidpop.ttf" id="2_8u835"]
+[ext_resource type="Texture2D" uid="uid://6ieca8spbjag" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135042 (1).png" id="2_ccer4"]
+[ext_resource type="Texture2D" uid="uid://djcfj1hy4y3a8" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135328 (1).png" id="3_8u835"]
+[ext_resource type="FontFile" uid="uid://2houc8ceon7d" path="res://Font/Butterpop.ttf" id="3_ftari"]
+
+[node name="game_over" type="CanvasLayer" unique_id=2026313973]
+script = ExtResource("1_y26ei")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=864769769]
+offset_right = 1364.0
+offset_bottom = 758.0
+color = Color(0, 0, 0.003921569, 1)
+
+[node name="Panel" type="Panel" parent="." unique_id=1551846249]
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 1370.0
+offset_bottom = 758.0
+
+[node name="titleLabel" type="Label" parent="Panel" unique_id=750008384]
+layout_mode = 0
+offset_left = 406.0
+offset_top = 113.0
+offset_right = 946.0
+offset_bottom = 238.0
+theme_override_colors/font_color = Color(1, 0.654902, 0.28235295, 1)
+theme_override_fonts/font = ExtResource("2_8u835")
+theme_override_font_sizes/font_size = 100
+text = "GAME OVER"
+
+[node name="winnerLabel" type="Label" parent="Panel" unique_id=582489263]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 357.0
+offset_right = 925.0
+offset_bottom = 459.0
+theme_override_colors/font_color = Color(0.53333336, 0.77254903, 1, 1)
+theme_override_fonts/font = ExtResource("3_ftari")
+theme_override_font_sizes/font_size = 50
+
+[node name="scoreLabel" type="Label" parent="Panel" unique_id=1415934638]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 490.0
+offset_right = 886.0
+offset_bottom = 612.0
+theme_override_fonts/font = ExtResource("3_ftari")
+theme_override_font_sizes/font_size = 35
+
+[node name="btn_home" type="TextureButton" parent="Panel" unique_id=2130211408]
+layout_mode = 0
+offset_left = 502.0
+offset_top = 609.0
+offset_right = 555.0
+offset_bottom = 661.5
+scale = Vector2(2, 2)
+texture_normal = ExtResource("2_ccer4")
+
+[node name="btn_replay" type="TextureButton" parent="Panel" unique_id=131507756]
+layout_mode = 0
+offset_left = 798.0
+offset_top = 608.0
+offset_right = 846.0
+offset_bottom = 656.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("3_8u835")

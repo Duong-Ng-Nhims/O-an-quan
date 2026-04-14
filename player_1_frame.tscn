@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bqs8i4aim3p7w"]
+
+[ext_resource type="Script" uid="uid://6ycui45wuy3a" path="res://player_1_frame.gd" id="1_lwsgl"]
+[ext_resource type="Texture2D" uid="uid://bvgnjihq7yih7" path="res://Assets/snapedit_1775999665704.png" id="2_y5ckj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lwsgl"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 0, 0, 1)
+
+[node name="player1Frame" type="Control" unique_id=63161917]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_lwsgl")
+
+[node name="frame" type="PanelContainer" parent="." unique_id=1574084561]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lwsgl")
+
+[node name="avartar" type="TextureRect" parent="frame" unique_id=1675193603]
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 2
+texture = ExtResource("2_y5ckj")
+stretch_mode = 5
+
+[node name="timeLabel" type="Label" parent="." unique_id=2094237433]
+layout_mode = 0
+offset_left = -102.0
+offset_top = 16.0
+offset_right = -14.0
+offset_bottom = 61.0
+theme_override_font_sizes/font_size = 32
+
+[node name="turnTimer" type="Timer" parent="." unique_id=653357871]
+one_shot = true
+
+[connection signal="timeout" from="turnTimer" to="." method="_on_turn_timer_timeout"]

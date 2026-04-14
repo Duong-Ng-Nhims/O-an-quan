@@ -74,5 +74,6 @@ offset_bottom = 170.0
 texture_normal = ExtResource("11_sqsdl")
 metadata/_edit_lock_ = true
 
+[connection signal="pressed" from="btn_player" to="." method="_on_btn_player_pressed"]
 [connection signal="pressed" from="btn_ai" to="." method="_on_btn_ai_pressed"]
 [connection signal="pressed" from="btn_home_option" to="." method="_on_btn_home_pressed"]

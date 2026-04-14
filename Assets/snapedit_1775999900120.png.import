@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dud4dw10ebom3"
-path="res://.godot/imported/Hand1.png-158fde899200e670d84085fa8f6b14f8.ctex"
+uid="uid://csrfsruvohne2"
+path="res://.godot/imported/snapedit_1775999900120.png-bc084411e68faf29140c7041e7d96103.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Hand1.png"
-dest_files=["res://.godot/imported/Hand1.png-158fde899200e670d84085fa8f6b14f8.ctex"]
+source_file="res://Assets/snapedit_1775999900120.png"
+dest_files=["res://.godot/imported/snapedit_1775999900120.png-bc084411e68faf29140c7041e7d96103.ctex"]
 
 [params]
 
