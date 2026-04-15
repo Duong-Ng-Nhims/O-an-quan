@@ -5,7 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://cliybhn78x85j" path="res://Buttons/01442c0d5144e21405764050bcb6a200-fotor-20260402144011 (3).png" id="3_lquwl"]
 [ext_resource type="Texture2D" uid="uid://wyvf1de8tmpa" path="res://Buttons/01442c0d5144e21405764050bcb6a200-fotor-20260402144011 (3)-fotor-20260404132253.png" id="4_5vw27"]
 [ext_resource type="Texture2D" uid="uid://cc2q13qvapuej" path="res://Buttons/01442c0d5144e21405764050bcb6a200-fotor-20260402144030 (1).png" id="4_7mycd"]
-[ext_resource type="Script" uid="uid://cyfk0drwenw5i" path="res://btn_quit.gd" id="5_7mycd"]
 [ext_resource type="Texture2D" uid="uid://b77ldaygqxg4k" path="res://Buttons/01442c0d5144e21405764050bcb6a200-fotor-20260402144030 (1)-fotor-20260404132542.png" id="5_272bh"]
 [ext_resource type="FontFile" uid="uid://crdi32imrad5" path="res://Font/Engcomica.otf" id="8_5vw27"]
 
@@ -25,7 +24,6 @@ offset_right = 857.0
 offset_bottom = 518.0
 texture_normal = ExtResource("3_lquwl")
 texture_pressed = ExtResource("4_5vw27")
-metadata/_edit_lock_ = true
 
 [node name="btn_quit" type="TextureButton" parent="." unique_id=796177332]
 offset_left = 554.0
@@ -34,18 +32,16 @@ offset_right = 859.0
 offset_bottom = 651.0
 texture_normal = ExtResource("4_7mycd")
 texture_pressed = ExtResource("5_272bh")
-script = ExtResource("5_7mycd")
-metadata/_edit_lock_ = true
 
 [node name="Label" type="Label" parent="." unique_id=1581322235]
-offset_left = 415.0
-offset_top = 179.0
-offset_right = 987.0
-offset_bottom = 316.0
+offset_left = 380.0
+offset_top = 173.0
+offset_right = 1067.0
+offset_bottom = 373.0
 theme_override_colors/font_color = Color(1, 0.6862745, 0, 1)
 theme_override_fonts/font = ExtResource("8_5vw27")
 theme_override_font_sizes/font_size = 150
-text = "Ô ÃN QUAN"
+text = "Ô ĂN QUAN"
 
 [connection signal="pressed" from="btn_play" to="." method="_on_btn_play_pressed"]
 [connection signal="pressed" from="btn_quit" to="." method="_on_quit_btn_pressed"]

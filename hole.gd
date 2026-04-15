@@ -27,6 +27,7 @@ func _on_btn_left_pressed() -> void:
 	
 	
 	
+	
 func _on_btn_right_pressed() -> void:
 	arrow.hide()
 	directional_selected.emit(1)

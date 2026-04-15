@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameData="*uid://wxl1iia7w3xw"
+Sounds="*uid://cc2cyk2oebj4c"
 
 [display]
 

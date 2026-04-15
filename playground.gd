@@ -24,9 +24,12 @@ var is_busy: bool = false
 var all_slot = []
 
 func _on_btn_home_pressed() -> void:
+	Sounds.Click_Sound()
 	get_tree().change_scene_to_file("res://main.tscn")
 	
 func _ready():
+	#Sounds.play_bgm("res://Sound/Nhac.nen.trong.tro.choi.mp3")
+	Sounds.play_bgm2()
 	is_ai_mode = GameData.is_ai_mode
 	ai_difficulty = GameData.ai_difficulty
 	
@@ -563,4 +566,10 @@ func thuc_hien_nuoc_di_ai():
 		await rai_soi(hole_node, real_dir)
 			
 func _on_btn_replay_pressed() -> void:
+	Sounds.Click_Sound()
 	get_tree().reload_current_scene()
+
+
+func _on_btn_setting_pressed() -> void:
+	Sounds.Click_Sound()
+	pass # Replace with function body.

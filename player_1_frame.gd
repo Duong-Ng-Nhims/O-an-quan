@@ -18,7 +18,7 @@ const color_active = Color(0,1,0)
 func _process(_delta):
 	if not turn_timer.is_stopped():
 		var time_left = turn_timer.time_left
-		if time_left < 0.1:
+		if time_left < 1:
 			time_label.text = "0"
 		else:
 			time_label.text = str(ceil(time_left))

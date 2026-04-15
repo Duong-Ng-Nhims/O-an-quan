@@ -69,3 +69,4 @@ metadata/_edit_lock_ = true
 [connection signal="pressed" from="btn_medium" to="." method="_on_btn_medium_pressed"]
 [connection signal="pressed" from="btn_hard" to="." method="_on_btn_hard_pressed"]
 [connection signal="pressed" from="btn_home_ai" to="." method="_on_btn_home_ai_pressed"]
+[connection signal="toggled" from="btn_setting_ai" to="." method="_on_btn_setting_ai_toggled"]
