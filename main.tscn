@@ -41,7 +41,7 @@ offset_bottom = 373.0
 theme_override_colors/font_color = Color(1, 0.6862745, 0, 1)
 theme_override_fonts/font = ExtResource("8_5vw27")
 theme_override_font_sizes/font_size = 150
-text = "Ô ĂN QUAN"
+text = "Ô AN QUAN"
 
 [connection signal="pressed" from="btn_play" to="." method="_on_btn_play_pressed"]
 [connection signal="pressed" from="btn_quit" to="." method="_on_quit_btn_pressed"]

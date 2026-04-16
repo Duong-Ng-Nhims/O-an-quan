@@ -10,14 +10,14 @@
 [ext_resource type="Texture2D" uid="uid://dxycegb2wrseh" path="res://Buttons/b5e8cbc1362daed76efba0fb6223a909-fotor-2026040419458.png" id="7_tcest"]
 [ext_resource type="Texture2D" uid="uid://6ieca8spbjag" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135042 (1).png" id="9_tcest"]
 [ext_resource type="Script" uid="uid://cdsxvn078rqhj" path="res://btn_home_ai.gd" id="10_f6bqd"]
-[ext_resource type="Texture2D" uid="uid://dciaycamnjvk7" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135227 (1).png" id="11_hnj04"]
+[ext_resource type="Texture2D" uid="uid://lhejpiqpwvew" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401134917 (1).png" id="11_cnwne"]
 
 [node name="AI_level" type="Node2D" unique_id=28570833]
 script = ExtResource("1_cnwne")
 
 [node name="Background3" type="Sprite2D" parent="." unique_id=893203854]
-position = Vector2(682, 382.49997)
-scale = Vector2(0.48543, 0.49544275)
+position = Vector2(685.5, 384.99997)
+scale = Vector2(0.48791754, 0.49869797)
 texture = ExtResource("1_ahaci")
 metadata/_edit_lock_ = true
 
@@ -57,16 +57,16 @@ texture_normal = ExtResource("9_tcest")
 script = ExtResource("10_f6bqd")
 metadata/_edit_lock_ = true
 
-[node name="btn_setting_ai" type="TextureButton" parent="." unique_id=598752608]
+[node name="btn_sound" type="TextureButton" parent="." unique_id=598752608]
 offset_left = 1300.0
 offset_top = 84.0
 offset_right = 1349.0
 offset_bottom = 136.0
-texture_normal = ExtResource("11_hnj04")
+texture_normal = ExtResource("11_cnwne")
 metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="btn_easy" to="." method="_on_btn_easy_pressed"]
 [connection signal="pressed" from="btn_medium" to="." method="_on_btn_medium_pressed"]
 [connection signal="pressed" from="btn_hard" to="." method="_on_btn_hard_pressed"]
 [connection signal="pressed" from="btn_home_ai" to="." method="_on_btn_home_ai_pressed"]
-[connection signal="toggled" from="btn_setting_ai" to="." method="_on_btn_setting_ai_toggled"]
+[connection signal="toggled" from="btn_sound" to="." method="_on_btn_setting_ai_toggled"]

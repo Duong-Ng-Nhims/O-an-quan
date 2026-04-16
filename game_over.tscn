@@ -17,8 +17,9 @@ color = Color(0, 0, 0.003921569, 1)
 [node name="Panel" type="Panel" parent="." unique_id=1551846249]
 offset_left = 2.0
 offset_top = 2.0
-offset_right = 1370.0
-offset_bottom = 758.0
+offset_right = 1365.0
+offset_bottom = 765.0
+metadata/_edit_lock_ = true
 
 [node name="titleLabel" type="Label" parent="Panel" unique_id=750008384]
 layout_mode = 0
@@ -33,9 +34,9 @@ text = "GAME OVER"
 
 [node name="winnerLabel" type="Label" parent="Panel" unique_id=582489263]
 layout_mode = 0
-offset_left = 466.0
+offset_left = 498.0
 offset_top = 357.0
-offset_right = 925.0
+offset_right = 902.0
 offset_bottom = 459.0
 theme_override_colors/font_color = Color(0.53333336, 0.77254903, 1, 1)
 theme_override_fonts/font = ExtResource("3_ftari")
@@ -43,9 +44,9 @@ theme_override_font_sizes/font_size = 50
 
 [node name="scoreLabel" type="Label" parent="Panel" unique_id=1415934638]
 layout_mode = 0
-offset_left = 516.0
+offset_left = 553.0
 offset_top = 490.0
-offset_right = 886.0
+offset_right = 843.0
 offset_bottom = 612.0
 theme_override_fonts/font = ExtResource("3_ftari")
 theme_override_font_sizes/font_size = 35

@@ -9,14 +9,14 @@
 [ext_resource type="Texture2D" uid="uid://cd7ft1mxg465p" path="res://Buttons/b5e8cbc1362daed76efba0fb6223a909-fotor-20260404161542.png" id="5_td4eo"]
 [ext_resource type="Texture2D" uid="uid://bgqwbkacnq4w5" path="res://Buttons/b5e8cbc1362daed76efba0fb6223a909-fotor-20260404161614.png" id="9_sqsdl"]
 [ext_resource type="Texture2D" uid="uid://6ieca8spbjag" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135042 (1).png" id="10_lrby8"]
-[ext_resource type="Texture2D" uid="uid://dciaycamnjvk7" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135227 (1).png" id="11_sqsdl"]
+[ext_resource type="Texture2D" uid="uid://lhejpiqpwvew" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401134917 (1).png" id="10_td4eo"]
 
 [node name="Option" type="Node2D" unique_id=564780436]
 script = ExtResource("1_sqsdl")
 
 [node name="Background3" type="Sprite2D" parent="." unique_id=1070584835]
-position = Vector2(689.9999, 379)
-scale = Vector2(0.48898357, 0.4947917)
+position = Vector2(688.5, 383.5)
+scale = Vector2(0.48791754, 0.50065106)
 texture = ExtResource("1_cd5v0")
 metadata/_edit_lock_ = true
 
@@ -55,16 +55,16 @@ offset_bottom = 85.0
 texture_normal = ExtResource("10_lrby8")
 metadata/_edit_lock_ = true
 
-[node name="btn_setting_option" type="TextureButton" parent="." unique_id=1027845743]
+[node name="btn_sound" type="TextureButton" parent="." unique_id=1027845743]
 offset_left = 1303.0
 offset_top = 112.0
 offset_right = 1355.0
 offset_bottom = 170.0
-texture_normal = ExtResource("11_sqsdl")
+texture_normal = ExtResource("10_td4eo")
 metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="btn_player" to="." method="_on_btn_player_pressed"]
 [connection signal="pressed" from="btn_ai" to="." method="_on_btn_ai_pressed"]
 [connection signal="pressed" from="btn_huongdan" to="." method="_on_btn_huongdan_pressed"]
 [connection signal="pressed" from="btn_home_option" to="." method="_on_btn_home_pressed"]
-[connection signal="pressed" from="btn_setting_option" to="." method="_on_btn_setting_option_pressed"]
+[connection signal="pressed" from="btn_sound" to="." method="_on_btn_setting_option_pressed"]

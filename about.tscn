@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://ccvntclnui76"]
+
+[ext_resource type="Texture2D" uid="uid://srj35ectn2rb" path="res://Background/e4a1d8f2937a386daa81788fce14cbc5.jpg" id="1_pp48r"]
+[ext_resource type="Script" uid="uid://c0gkr14fkiixa" path="res://about.gd" id="1_sx25x"]
+[ext_resource type="Texture2D" uid="uid://cuyt42m85n8to" path="res://Assets/tải_xuống-removebg-preview.png" id="2_k56y8"]
+[ext_resource type="Texture2D" uid="uid://6ieca8spbjag" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135042 (1).png" id="4_x5r8a"]
+[ext_resource type="Texture2D" uid="uid://lhejpiqpwvew" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401134917 (1).png" id="5_5tp7k"]
+
+[node name="about" type="Node2D" unique_id=2077374303]
+script = ExtResource("1_sx25x")
+
+[node name="E4a1d8f2937a386Daa81788Fce14Cbc5" type="Sprite2D" parent="." unique_id=887789554]
+position = Vector2(682.5, 380.5)
+scale = Vector2(1.6168445, 0.9960733)
+texture = ExtResource("1_pp48r")
+metadata/_edit_lock_ = true
+
+[node name="2Bd92Cbf6e3e372c4559Ba9Ae6d59336RemovebgPreview" type="Sprite2D" parent="." unique_id=1853200869]
+position = Vector2(674.99994, 438.5)
+scale = Vector2(3.12, 1.358859)
+texture = ExtResource("2_k56y8")
+
+[node name="Label1" type="Label" parent="." unique_id=1023634549]
+offset_left = 252.0
+offset_top = 119.0
+offset_right = 1046.0
+offset_bottom = 246.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Cách chơi
+Hai người chơi lần lượt đi theo lượt.
+Ở mỗi lượt, người chơi chọn một ô dân thuộc phía mình, bốc toàn bộ quân trong ô đó.
+Rải quân lần lượt vào các ô tiếp theo theo chiều kim đồng hồ hoặc ngược chiều kim đồng hồ (tùy chọn).
+Mỗi ô đi qua được thả 1 quân."
+
+[node name="Label2" type="Label" parent="." unique_id=1161185629]
+offset_left = 236.0
+offset_top = 245.0
+offset_right = 1159.0
+offset_bottom = 372.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Cách ăn quân
+Sau khi rải hết quân, nếu ô tiếp theo là ô trống và sau đó nữa là ô có quân, người chơi được ăn toàn bộ quân trong ô đó.
+Việc ăn quân có thể tiếp tục nếu thỏa điều kiện trên.
+Quân ăn được sẽ được giữ riêng để tính điểm.
+Mỗi ô đi qua được thả 1 quân."
+
+[node name="Label3" type="Label" parent="." unique_id=867797806]
+offset_left = 236.0
+offset_top = 531.0
+offset_right = 1159.0
+offset_bottom = 658.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Kết thúc trò chơi
+Trò chơi kết thúc khi cả hai ô quan đều bị ăn hết.
+Nếu một bên không còn quân ở các ô dân, người chơi phải dùng quân đã ăn để rải lại, nếu không đủ thì bị mất lượt."
+
+[node name="Label4" type="Label" parent="." unique_id=79954793]
+offset_left = 269.0
+offset_top = 628.0
+offset_right = 992.0
+offset_bottom = 755.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Cách tính điểm
+Mỗi quân dân = 1 điểm
+Mỗi quân quan = 10 điểm
+Người chơi có tổng điểm cao hơn là người chiến thắng."
+
+[node name="btn_home" type="TextureButton" parent="." unique_id=2061656688]
+offset_left = 1297.0
+offset_top = 20.0
+offset_right = 1345.0
+offset_bottom = 68.0
+texture_normal = ExtResource("4_x5r8a")
+
+[node name="btn_sound" type="TextureButton" parent="." unique_id=1995690588]
+offset_left = 1297.0
+offset_top = 90.0
+offset_right = 1345.0
+offset_bottom = 138.0
+texture_normal = ExtResource("5_5tp7k")
+
+[connection signal="pressed" from="btn_home" to="." method="_on_btn_home_pressed"]
+[connection signal="pressed" from="btn_sound" to="." method="_on_btn_sound_pressed"]

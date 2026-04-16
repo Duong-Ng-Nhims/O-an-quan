@@ -3,12 +3,13 @@
 [ext_resource type="Script" uid="uid://bptibmbmbjy6u" path="res://playground.gd" id="1_is3ju"]
 [ext_resource type="Texture2D" uid="uid://bf3tg168pyy7b" path="res://Background/Screenshot 2026-04-02 180046.png" id="1_rupst"]
 [ext_resource type="Texture2D" uid="uid://6ieca8spbjag" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135042 (1).png" id="3_o00ia"]
-[ext_resource type="Texture2D" uid="uid://dciaycamnjvk7" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135227 (1).png" id="4_4bqqs"]
+[ext_resource type="Texture2D" uid="uid://lhejpiqpwvew" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401134917 (1).png" id="4_h1jm5"]
 [ext_resource type="Texture2D" uid="uid://qint8h40em6w" path="res://Assets/596641d712810e1bff080317843cae1d-removebg-preview (1).png" id="5_o00ia"]
 [ext_resource type="PackedScene" uid="uid://72fctep5cu5f" path="res://hole.tscn" id="5_pi42a"]
 [ext_resource type="Texture2D" uid="uid://ce7ms2lmpl482" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401134438 (1).png" id="6_4bqqs"]
 [ext_resource type="PackedScene" uid="uid://bqs8i4aim3p7w" path="res://player_1_frame.tscn" id="7_v7dth"]
 [ext_resource type="PackedScene" uid="uid://bumwectff6dwd" path="res://player_2_frame.tscn" id="8_pi42a"]
+[ext_resource type="Texture2D" uid="uid://bxkw8xps76gyy" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135418 (1).png" id="8_pio1y"]
 [ext_resource type="Texture2D" uid="uid://djcfj1hy4y3a8" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135328 (1).png" id="10_h1jm5"]
 
 [node name="playground" type="Node2D" unique_id=867354591]
@@ -28,12 +29,12 @@ offset_bottom = 81.0
 texture_normal = ExtResource("3_o00ia")
 metadata/_edit_lock_ = true
 
-[node name="btn_setting" type="TextureButton" parent="." unique_id=244158836]
+[node name="btn_sound" type="TextureButton" parent="." unique_id=244158836]
 offset_left = 1304.0
 offset_top = 106.0
 offset_right = 1352.0
 offset_bottom = 161.0
-texture_normal = ExtResource("4_4bqqs")
+texture_normal = ExtResource("4_h1jm5")
 metadata/_edit_lock_ = true
 
 [node name="board_manager" type="Node2D" parent="." unique_id=1665214591]
@@ -118,6 +119,7 @@ offset_top = 15.0
 offset_right = 74.0
 offset_bottom = 70.0
 texture_normal = ExtResource("6_4bqqs")
+texture_pressed = ExtResource("8_pio1y")
 metadata/_edit_lock_ = true
 
 [node name="P1" parent="." unique_id=63161917 instance=ExtResource("7_v7dth")]
@@ -159,7 +161,8 @@ texture_normal = ExtResource("10_h1jm5")
 metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="btn_home" to="." method="_on_btn_home_pressed"]
-[connection signal="pressed" from="btn_setting" to="." method="_on_btn_setting_pressed"]
+[connection signal="pressed" from="btn_sound" to="." method="_on_btn_setting_pressed"]
+[connection signal="pressed" from="btn_pause" to="." method="_on_btn_pause_pressed"]
 [connection signal="het_gio" from="P1" to="." method="_on_p_1_het_gio"]
 [connection signal="het_gio" from="P2" to="." method="_on_p_2_het_gio"]
 [connection signal="pressed" from="btn_replay" to="." method="_on_btn_replay_pressed"]

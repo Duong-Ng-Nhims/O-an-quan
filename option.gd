@@ -20,9 +20,8 @@ func _on_btn_player_pressed() -> void:
 
 func _on_btn_huongdan_pressed() -> void:
 	Sounds.Click_Sound()
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://about.tscn")
 	
 
 func _on_btn_setting_option_pressed() -> void:
 	Sounds.Click_Sound()
-	pass # Replace with function body.

@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bhj1afbylmucl"]
+
+[ext_resource type="Script" uid="uid://dbcsy8kwlgwd4" path="res://pause.gd" id="1_aq7p1"]
+[ext_resource type="Texture2D" uid="uid://b1lupjgs8hq5a" path="res://Background/022ab82a7b53ce50072e84637c96ce35-ezremove.png" id="2_6eyaj"]
+[ext_resource type="Texture2D" uid="uid://bxkw8xps76gyy" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135418 (1).png" id="3_bwtow"]
+[ext_resource type="Texture2D" uid="uid://6ieca8spbjag" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135042 (1).png" id="4_05lnj"]
+[ext_resource type="FontFile" uid="uid://2houc8ceon7d" path="res://Font/Butterpop.ttf" id="5_jg8ls"]
+
+[node name="pause" type="CanvasLayer" unique_id=310673663]
+process_mode = 3
+script = ExtResource("1_aq7p1")
+
+[node name="022Ab82a7b53Ce50072e84637c96Ce35Ezremove" type="Sprite2D" parent="." unique_id=39042746]
+position = Vector2(683.00006, 381)
+scale = Vector2(1.362, 0.758)
+texture = ExtResource("2_6eyaj")
+metadata/_edit_lock_ = true
+
+[node name="btn_resume" type="TextureButton" parent="." unique_id=2015462575]
+offset_left = 484.0
+offset_top = 444.0
+offset_right = 534.5
+offset_bottom = 498.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("3_bwtow")
+metadata/_edit_lock_ = true
+
+[node name="btn_home" type="TextureButton" parent="." unique_id=2044843973]
+offset_left = 818.0
+offset_top = 444.0
+offset_right = 866.0
+offset_bottom = 492.0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("4_05lnj")
+metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="." unique_id=1277517194]
+offset_left = 319.0
+offset_top = 175.0
+offset_right = 1086.0
+offset_bottom = 403.0
+theme_override_colors/font_color = Color(0.9843137, 1, 0, 0.78039217)
+theme_override_fonts/font = ExtResource("5_jg8ls")
+theme_override_font_sizes/font_size = 200
+text = "PAUSED"
+
+[connection signal="pressed" from="btn_resume" to="." method="_on_btn_resume_pressed"]
+[connection signal="pressed" from="btn_home" to="." method="_on_btn_home_pressed"]
