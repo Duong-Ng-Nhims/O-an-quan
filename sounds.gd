@@ -20,10 +20,6 @@ func Rai_Quan():
 func An_Quan():
 	%AnQuan.play()
 
-
-
-	
-	
 func play_bgm1():
 	$BGM2.stop()
 	$BGM.play()
@@ -31,6 +27,10 @@ func play_bgm1():
 func play_bgm2():
 	$BGM.stop()
 	$BGM2.play()
+	
+func play_gameover():
+	$BGM2.stop()
+	$GameOver.play()
 	
 	
 	

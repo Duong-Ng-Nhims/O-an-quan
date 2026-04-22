@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://lhejpiqpwvew" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401134917 (1).png" id="4_h1jm5"]
 [ext_resource type="Texture2D" uid="uid://qint8h40em6w" path="res://Assets/596641d712810e1bff080317843cae1d-removebg-preview (1).png" id="5_o00ia"]
 [ext_resource type="PackedScene" uid="uid://72fctep5cu5f" path="res://hole.tscn" id="5_pi42a"]
-[ext_resource type="Texture2D" uid="uid://ce7ms2lmpl482" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401134438 (1).png" id="6_4bqqs"]
+[ext_resource type="Texture2D" uid="uid://bbgxy66x6r8yw" path="res://Buttons/Wood_circle_game_buttons-fotor-20260416091438 (1).png" id="5_pio1y"]
 [ext_resource type="PackedScene" uid="uid://bqs8i4aim3p7w" path="res://player_1_frame.tscn" id="7_v7dth"]
 [ext_resource type="PackedScene" uid="uid://bumwectff6dwd" path="res://player_2_frame.tscn" id="8_pi42a"]
 [ext_resource type="Texture2D" uid="uid://bxkw8xps76gyy" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135418 (1).png" id="8_pio1y"]
@@ -34,7 +34,9 @@ offset_left = 1304.0
 offset_top = 106.0
 offset_right = 1352.0
 offset_bottom = 161.0
+toggle_mode = true
 texture_normal = ExtResource("4_h1jm5")
+texture_pressed = ExtResource("5_pio1y")
 metadata/_edit_lock_ = true
 
 [node name="board_manager" type="Node2D" parent="." unique_id=1665214591]
@@ -118,8 +120,7 @@ offset_left = 19.0
 offset_top = 15.0
 offset_right = 74.0
 offset_bottom = 70.0
-texture_normal = ExtResource("6_4bqqs")
-texture_pressed = ExtResource("8_pio1y")
+texture_normal = ExtResource("8_pio1y")
 metadata/_edit_lock_ = true
 
 [node name="P1" parent="." unique_id=63161917 instance=ExtResource("7_v7dth")]
@@ -162,6 +163,8 @@ metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="btn_home" to="." method="_on_btn_home_pressed"]
 [connection signal="pressed" from="btn_sound" to="." method="_on_btn_setting_pressed"]
+[connection signal="ready" from="btn_sound" to="." method="_on_btn_sound_ready"]
+[connection signal="toggled" from="btn_sound" to="." method="_on_btn_sound_toggled"]
 [connection signal="pressed" from="btn_pause" to="." method="_on_btn_pause_pressed"]
 [connection signal="het_gio" from="P1" to="." method="_on_p_1_het_gio"]
 [connection signal="het_gio" from="P2" to="." method="_on_p_2_het_gio"]

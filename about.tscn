@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cuyt42m85n8to" path="res://Assets/tải_xuống-removebg-preview.png" id="2_k56y8"]
 [ext_resource type="Texture2D" uid="uid://6ieca8spbjag" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135042 (1).png" id="4_x5r8a"]
 [ext_resource type="Texture2D" uid="uid://lhejpiqpwvew" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401134917 (1).png" id="5_5tp7k"]
+[ext_resource type="Texture2D" uid="uid://bbgxy66x6r8yw" path="res://Buttons/Wood_circle_game_buttons-fotor-20260416091438 (1).png" id="6_x5r8a"]
 
 [node name="about" type="Node2D" unique_id=2077374303]
 script = ExtResource("1_sx25x")
@@ -77,7 +78,10 @@ offset_left = 1297.0
 offset_top = 90.0
 offset_right = 1345.0
 offset_bottom = 138.0
+toggle_mode = true
 texture_normal = ExtResource("5_5tp7k")
+texture_pressed = ExtResource("6_x5r8a")
 
 [connection signal="pressed" from="btn_home" to="." method="_on_btn_home_pressed"]
 [connection signal="pressed" from="btn_sound" to="." method="_on_btn_sound_pressed"]
+[connection signal="toggled" from="btn_sound" to="." method="_on_btn_sound_toggled"]

@@ -30,6 +30,8 @@ func _on_btn_home_pressed() -> void:
 func _ready():
 	#Sounds.play_bgm("res://Sound/Nhac.nen.trong.tro.choi.mp3")
 	Sounds.play_bgm2()
+	$btn_sound.button_pressed=AudioServer.is_bus_mute(0)
+	
 	is_ai_mode = GameData.is_ai_mode
 	ai_difficulty = GameData.ai_difficulty
 	
@@ -215,6 +217,7 @@ func update_stone_number(hole_node):
 		label.visible = (count > 0)
 	
 func them_mot_vien_soi(hole_node, is_mandarine_stone = false):
+	Sounds.Rai_Quan()
 	var scene_to_use = mandarine_stone_scene if is_mandarine_stone else stone_scene
 	var stone = scene_to_use.instantiate()
 	var offset = Vector2(randf_range(-15, 15), randf_range(-15, 15))
@@ -226,6 +229,7 @@ func clear_stones_in_hole(hole_node):
 	for stone in stones_container.get_children():
 		if stone.global_position.distance_to(hole_node.global_position) < 30:
 			stone.queue_free()
+			Sounds.An_Quan()
 	await  get_tree().process_frame
 	update_stone_number(hole_node)
 			
@@ -240,6 +244,7 @@ func an_quan(eat_idx, direction):
 		var stone_count = get_stone_in_hole(target_hole)
 			
 		bo_vao_gio(current_turn, stone_count, target_hole in mandarineHoles)
+		Sounds.An_Quan()
 			
 		await clear_stones_in_hole(target_hole)
 		update_stone_number(target_hole)
@@ -378,7 +383,7 @@ func thu_dan_con_lai():
 func hien_thi_man_hinh_ket_thuc():
 	p1.stop_timer()
 	p2.stop_timer()
-	
+		
 	var end_screen = game_over_scene.instantiate()
 	add_child(end_screen)
 	
@@ -572,10 +577,17 @@ func _on_btn_replay_pressed() -> void:
 
 func _on_btn_setting_pressed() -> void:
 	Sounds.Click_Sound()
+	
 
 
 func _on_btn_pause_pressed() -> void:
+	Sounds.Click_Sound()
 	get_tree().paused = true
 	var pause_scene = preload("res://pause.tscn").instantiate()
 	add_child(pause_scene)
 	
+
+
+func _on_btn_sound_toggled(toggled_on: bool) -> void:
+	AudioServer.set_bus_mute(0, toggled_on)
+	pass # Replace with function body.

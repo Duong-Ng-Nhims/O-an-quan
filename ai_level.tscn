@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://6ieca8spbjag" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401135042 (1).png" id="9_tcest"]
 [ext_resource type="Script" uid="uid://cdsxvn078rqhj" path="res://btn_home_ai.gd" id="10_f6bqd"]
 [ext_resource type="Texture2D" uid="uid://lhejpiqpwvew" path="res://Buttons/Wood_circle_game_buttons-fotor-20260401134917 (1).png" id="11_cnwne"]
+[ext_resource type="Texture2D" uid="uid://bbgxy66x6r8yw" path="res://Buttons/Wood_circle_game_buttons-fotor-20260416091438 (1).png" id="12_tcest"]
 
 [node name="AI_level" type="Node2D" unique_id=28570833]
 script = ExtResource("1_cnwne")
@@ -62,11 +63,14 @@ offset_left = 1300.0
 offset_top = 84.0
 offset_right = 1349.0
 offset_bottom = 136.0
+toggle_mode = true
 texture_normal = ExtResource("11_cnwne")
+texture_pressed = ExtResource("12_tcest")
 metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="btn_easy" to="." method="_on_btn_easy_pressed"]
 [connection signal="pressed" from="btn_medium" to="." method="_on_btn_medium_pressed"]
 [connection signal="pressed" from="btn_hard" to="." method="_on_btn_hard_pressed"]
 [connection signal="pressed" from="btn_home_ai" to="." method="_on_btn_home_ai_pressed"]
-[connection signal="toggled" from="btn_sound" to="." method="_on_btn_setting_ai_toggled"]
+[connection signal="pressed" from="btn_sound" to="." method="_on_btn_sound_pressed"]
+[connection signal="toggled" from="btn_sound" to="." method="_on_btn_sound_toggled"]

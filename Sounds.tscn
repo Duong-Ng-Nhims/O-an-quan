@@ -6,8 +6,10 @@
 [ext_resource type="AudioStream" uid="uid://dhguratxg0d8l" path="res://Sound/an.quan.mp3" id="4_xqp6s"]
 [ext_resource type="AudioStream" uid="uid://c1fyo63y4pgtn" path="res://Sound/nhac.nen.man.hinh.chinh.mp3" id="5_qybgf"]
 [ext_resource type="AudioStream" uid="uid://de4i2isltfqew" path="res://Sound/Nhac.nen.trong.tro.choi.mp3" id="6_bf76h"]
+[ext_resource type="AudioStream" uid="uid://d2g7q4ameefrt" path="res://Sound/end.game.2.mp3" id="7_xqp6s"]
 
 [node name="Sounds" type="Node" unique_id=181331033]
+process_mode = 3
 script = ExtResource("1_86864")
 
 [node name="ClickSound" type="AudioStreamPlayer" parent="." unique_id=197252160]
@@ -26,14 +28,20 @@ stream = ExtResource("4_xqp6s")
 volume_db = 10.0
 
 [node name="BGM" type="AudioStreamPlayer" parent="." unique_id=1750123407]
+process_mode = 3
 stream = ExtResource("5_qybgf")
 volume_db = -10.0
 autoplay = true
+parameters/looping = true
 
 [node name="BGM2" type="AudioStreamPlayer" parent="." unique_id=1787367729]
 stream = ExtResource("6_bf76h")
 volume_db = -10.0
 autoplay = true
+parameters/looping = true
+
+[node name="GameOver" type="AudioStreamPlayer" parent="." unique_id=740042058]
+stream = ExtResource("7_xqp6s")
 
 [connection signal="finished" from="ClickSound" to="." method="_on_click_sound_finished"]
 [connection signal="finished" from="RaiQuan" to="." method="_on_rai_quan_finished"]
